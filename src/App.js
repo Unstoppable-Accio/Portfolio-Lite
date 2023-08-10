@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from "react";
+import Navbar from "./Components/Navbar";
+import AboutMe from "./Components/AboutMe";
+import Section from "./Components/Section";
+// import "./style.css"
+import sectionData from "./datas/sectionData";
+
+
+// Project link: https://drive.google.com/file/d/1aOYebjuih6ib6XNAm6ejh5yRwhoFmag4/view?pli=1
+
+
+const App = () => {
+    // let a = 100
+    // let b = 70
+
+    return(
+        <div>
+            <Navbar />
+            <AboutMe />
+             {
+                sectionData.map((value)=>(
+                       <Section  title={value.title} des={value.des} />
+                ))
+             }
+             {/* {
+               a>b? (<h1> Bigger is {a}</h1>) : (<h1>Bigger is {b}</h1>)
+             } */}
+
+        </div>
+    )
 }
 
 export default App;
+
+
+// in Jsx 
+// if else => ternary operator 
+// loops => map, filter, reduce => higher order function

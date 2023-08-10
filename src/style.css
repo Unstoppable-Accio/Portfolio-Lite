@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+     text-align: center;
+     background-color: rgb(7, 7, 7);
+     color: tomato;
+}
+
+.navbar .menu a{
+    color: tomato;
+    text-decoration: none;
+}
+.about-me img{
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+   
+}
+.about-me h1{
+    text-align: center;
+    color: tomato;
+    
+}
+
+.section h1{
+    text-align: center;
+}
